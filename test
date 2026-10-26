@@ -1,0 +1,27 @@
+
+class DienThoai:
+    # Ham khoi tao cac thuoc tinh
+    def __init__(self, MaMay, TenMay, HangSanXuat, DungLuongPin, GiaBan):
+        self.MaMay = MaMay
+        self.TenMay = TenMay
+        self.HangSanXuat = HangSanXuat
+        self.DungLuongPin = DungLuongPin
+        self.GiaBan = GiaBan
+
+    # Ham hien thi thong tin dien thoai
+    def thongtindienthoai(self):
+        print("Ma may:", self.MaMay)
+        print("Ten may:", self.TenMay)
+        print("Hang san xuat:", self.HangSanXuat)
+        print("Dung luong pin:", self.DungLuongPin, "mAh")
+        print("Gia ban:", self.GiaBan, "VND")
+        print("-" * 40)
+
+
+# Tao hai doi tuong dien thoai
+DT01 = DienThoai("DT01", "iPhone 15 Pro", "Apple", 3274, 28990000)
+DT02 = DienThoai("DT02", "Galaxy S24 Ultra", "Samsung", 5000, 29990000)
+
+# Hien thi thong tin hai dien thoai
+DT01.thongtindienthoai()
+DT02.thongtindienthoai()
